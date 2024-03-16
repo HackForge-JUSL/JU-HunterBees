@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import UploadForm from './components/UploadForm.jsx';
-import ImagePreview from './components/ImagePreview';
+import ImagePreview from './components/ImagePreview.jsx';
 
 function App() {
     const [imageUrl, setImageUrl] = useState('');

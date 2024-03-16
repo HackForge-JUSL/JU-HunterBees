@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import ImagePreview from './ImagePreview';
 
 function UploadForm() {
     const [selectedFile, setSelectedFile] = useState(null);
+    const [previewUrl, setPreviewUrl] = useState(null);
 
     const handleFileChange = (event) => {
         setSelectedFile(event.target.files[0]);
+        setPreviewUrl(URL.createObjectURL(event.target.files[0]));
     };
 
     const handleUpload = () => {
@@ -17,6 +20,7 @@ function UploadForm() {
         <div>
             <input type="file" onChange={handleFileChange} />
             <button onClick={handleUpload}>Upload</button>
+            {previewUrl && <ImagePreview imageUrl={previewUrl} />}
         </div>
     );
 }
