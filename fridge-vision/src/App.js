@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import UploadForm from '.\components\UploadForm.jsx';
+import ImagePreview from '.\components\ImagePreview';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [imageUrl, setImageUrl] = useState('');
+
+    const handleImageUpload = (imageData) => {
+        // Process image data and set the imageUrl state
+        setImageUrl(imageData);
+    };
+
+    return (
+        <div>
+            <h1>Fridge Vision</h1>
+            <UploadForm onUpload={handleImageUpload} />
+            {imageUrl && <ImagePreview imageUrl={imageUrl} />}
+        </div>
+    );
 }
 
 export default App;
