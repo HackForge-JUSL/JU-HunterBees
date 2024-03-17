@@ -67,32 +67,32 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
+      "icon": "fa fa-user",
       "name": "User-Friendly Interface for Effortless Use",
       "text": "Stay informed with real-time notifications as your food items near their expiration dates, minimizing waste and maximizing freshness."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
+      "icon": "fa fa-users",
       "name": "Expert Team Dedicated to Innovation",
       "text": "Gain valuable nutritional information for stored items and receive personalized recipe suggestions based on available ingredients, making meal planning healthier and easier."
     },
     {
-      "icon": "fa fa-cloud-download",
+      "icon": "fa fa-desktop",
       "name": "Sleek Design Enhancing Your Kitchen Space",
       "text": "Effortlessly track your food inventory in real-time using our Computer Vision technology, ensuring you always have an accurate view of what's in your fridge."
     },
     {
-      "icon": "fa fa-language",
+      "icon": "fa fa-list",
       "name": "Automated Inventory Management",
       "text": " Elevate your kitchen aesthetics with our Smart Fridge's modern and space-saving design, seamlessly integrating into your home environment."
     },
     {
-      "icon": "fa fa-plane",
+      "icon": "fa fa-info",
       "name": "Nutrition Insights and Recipe Recommendations",
       "text": "Gain valuable nutritional information for stored items and receive personalized recipe suggestions based on available ingredients, making meal planning healthier and easier."
     },
     {
-      "icon": "fa fa-pie-chart",
+      "icon": "fa fa-bell-o",
       "name": "Timely Expiration Alerts",
       "text": "Stay informed with real-time notifications as your food items near their expiration dates, minimizing waste and maximizing freshness."
     }

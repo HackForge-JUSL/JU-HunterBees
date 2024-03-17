@@ -5,23 +5,23 @@ export const Features = () => {
   const navigate = useNavigate();
   const featuresData = [
     {
-      icon: "fa fa-comments-o",
+      icon: "fa fa-truck",
       title: "Real-Time Inventory Tracking",
       text: "Stay updated on your food supplies with live monitoring, ensuring you never run out of essentials.",
       onClick: () => navigate('/UploadForm')
     },
     {
-      icon: "fa fa-bullhorn",
+      icon: "fa fa-cutlery",
       title: "Personalized Recipe Recommendations",
       text: "Receive tailored recipe suggestions based on your preferences and available ingredients, simplifying meal planning."
     },
     {
-      icon: "fa fa-group",
+      icon: "fa fa-bell",
       title: "Expiration Date Alerts",
       text: " Get timely notifications when your items are nearing expiry, reducing food waste and optimizing freshness."
     },
     {
-      icon: "fa fa-magic",
+      icon: "fa fa-book",
       title: "Nutritional Information Access",
       text: "Access detailed nutritional data for stored items, empowering healthier food choices and informed meal preparation."
     }
