@@ -1,10 +1,10 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Introducing Smart Fridge",
+    "paragraph": "Personalized Nutrition at Your Fingertips:Transforming Kitchen Efficiency and Nutrition Management"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "At PieAi, we're transforming kitchen efficiency and nutrition management. Our Smart Fridge, powered by cutting-edge Computer Vision, automates inventory tracking, reducing food waste with timely expiration alerts. We offer personalized nutrition insights and recipe recommendations, simplifying healthy meal planning. Committed to sustainability and simplicity, PieAi revolutionizes how people interact with their food.",
     "Why": [
       "Lorem ipsum dolor",
       "Tempor incididunt",
