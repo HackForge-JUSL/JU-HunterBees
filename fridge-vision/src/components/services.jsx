@@ -7,8 +7,7 @@ export const Services = (props) => {
         <div className="section-title">
           <h2>Our Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          Experience the future of kitchen management with our comprehensive suite of services, designed to streamline your tasks, minimize waste, and enhance your culinary experience effortlessly.
           </p>
         </div>
         <div className="row">

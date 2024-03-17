@@ -6,24 +6,24 @@ export const Features = () => {
   const featuresData = [
     {
       icon: "fa fa-comments-o",
-      title: "Fridge Vision",
-      text: "Fridge Vision is a web application that allows users to take a picture of the inside of their fridge and receive a list of recipes that can be made with the ingredients they have.",
+      title: "Real-Time Inventory Tracking",
+      text: "Stay updated on your food supplies with live monitoring, ensuring you never run out of essentials.",
       onClick: () => navigate('/UploadForm')
     },
     {
       icon: "fa fa-bullhorn",
-      title: "Lorem ipsum",
-      text: "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      title: "Personalized Recipe Recommendations",
+      text: "Receive tailored recipe suggestions based on your preferences and available ingredients, simplifying meal planning."
     },
     {
       icon: "fa fa-group",
-      title: "Lorem ipsum",
-      text: "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      title: "Expiration Date Alerts",
+      text: " Get timely notifications when your items are nearing expiry, reducing food waste and optimizing freshness."
     },
     {
       icon: "fa fa-magic",
-      title: "Lorem ipsum",
-      text: "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      title: "Nutritional Information Access",
+      text: "Access detailed nutritional data for stored items, empowering healthier food choices and informed meal preparation."
     }
   ];
 
