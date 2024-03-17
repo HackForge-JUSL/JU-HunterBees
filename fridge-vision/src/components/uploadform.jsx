@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import axios from 'axios';
 
 import { useDropzone } from 'react-dropzone';
@@ -9,6 +9,7 @@ function UploadForm() {
     const [selectedFile, setSelectedFile] = useState(null);
     const [previewUrl, setPreviewUrl] = useState(null);
     const [ingredients, setIngredients] = useState([]);
+    const [recipe, setRecipe] = useState(null);
 
     const onDrop = useCallback((acceptedFiles) => {
         setSelectedFile(acceptedFiles[0]);
@@ -54,14 +55,41 @@ function UploadForm() {
         };
     };
 
+    useEffect(() => {
+        if (ingredients.length > 0) {
+            const data = {
+                inputs: ingredients.join(', ')
+            };
+
+            fetch("https://api-inference.huggingface.co/models/flax-community/t5-recipe-generation", {
+                headers: { 
+                    Authorization: "Bearer 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",
+                    'Content-Type': 'application/json'
+                },
+                method: "POST",
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log(result); // Log the entire response object
+                if (result && result[0] && result[0].generated_text) {
+                    setRecipe(result[0].generated_text);
+                } else {
+                    console.error('No data in response');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    }, [ingredients]);
+    
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
             <div style={{ paddingTop: '20px' }}>
                 <div {...getRootProps()} style={{ border: '1px dashed gray', padding: '20px', marginBottom: '20px', height: '400px', width: '400px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                     <input {...getInputProps()} />
                     {selectedFile ? 
-    <img src={previewUrl} alt="Uploaded" style={{width: '100%', height: '100%', objectFit: 'cover'}} /> :
-    isDragActive ? 
+                        <img src={previewUrl} alt="Uploaded" style={{width: '100%', height: '100%', objectFit: 'cover'}} /> :
+                        isDragActive ? 
                             <>
                                 <FaUpload size={50} />
                                 <p>Drop the files here ...</p>
@@ -74,13 +102,22 @@ function UploadForm() {
                 </div>
                 <button onClick={handleUpload} style={{ backgroundColor: 'blue', color: 'white', padding: '10px 20px', borderRadius: '5px', border: 'none', cursor: 'pointer', fontSize: '16px', marginTop: '10px' }}>Upload</button>
             </div>
-            <div style={{ marginLeft: '20px' }}>
-                <h2>Ingredients</h2>
-                {ingredients.map((ingredient, index) => (
-                    <p key={index}>{ingredient}</p>
-                ))}
-            </div>
+            <div style={{ marginLeft: '20px', border: '1px solid black', padding: '10px', borderRadius: '5px' }}>
+            <h2>Ingredients</h2>
+            {ingredients.map((ingredient, index) => (
+                <p key={index}>{ingredient}</p>
+            ))}
         </div>
+
+        {recipe && (
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div style={{ marginLeft: '20px', marginTop: '20px', border: '1px solid black', padding: '10px', borderRadius: '5px' }}>
+                    <h2>Recipe</h2>
+                    {recipe}
+                </div>
+            </div>
+        )}
+    </div>
     );
 }
 
