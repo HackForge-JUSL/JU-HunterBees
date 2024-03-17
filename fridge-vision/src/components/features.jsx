@@ -8,7 +8,7 @@ export const Features = () => {
       icon: "fa fa-comments-o",
       title: "Fridge Vision",
       text: "Fridge Vision is a web application that allows users to take a picture of the inside of their fridge and receive a list of recipes that can be made with the ingredients they have.",
-      onClick: () => navigate('/UploadForm.jsx')
+      onClick: () => navigate('/UploadForm')
     },
     {
       icon: "fa fa-bullhorn",
