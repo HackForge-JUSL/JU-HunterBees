@@ -1327,8 +1327,8 @@ mark,
 .text-lowercase {
   text-transform: lowercase;
 }
-.text-uppercase {
-  text-transform: uppercase;
+.text-capitalize {
+  text-transform: capitalize;
 }
 .text-capitalize {
   text-transform: capitalize;
@@ -1472,7 +1472,7 @@ abbr[data-original-title] {
 }
 .initialism {
   font-size: 90%;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 blockquote {
   padding: 10px 20px;
