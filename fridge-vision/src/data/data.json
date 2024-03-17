@@ -6,16 +6,16 @@
   "About": {
     "paragraph": "At PieAi, we're transforming kitchen efficiency and nutrition management. Our Smart Fridge, powered by cutting-edge Computer Vision, automates inventory tracking, reducing food waste with timely expiration alerts. We offer personalized nutrition insights and recipe recommendations, simplifying healthy meal planning. Committed to sustainability and simplicity, PieAi revolutionizes how people interact with their food.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Innovative kitchen solutions",
+      "Personalized nutrition guidance",
+      "Automated waste reduction",
+      "Sleek, space-saving design"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Timely expiration alerts",
+      "Expert team dedication",
+      "Intuitive user interface",
+      "Eco-friendly sustainable practices"
     ]
   },
   "Gallery": [
@@ -68,33 +68,33 @@
   "Services": [
     {
       "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "User-Friendly Interface for Effortless Use",
+      "text": "Stay informed with real-time notifications as your food items near their expiration dates, minimizing waste and maximizing freshness."
     },
     {
       "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Expert Team Dedicated to Innovation",
+      "text": "Gain valuable nutritional information for stored items and receive personalized recipe suggestions based on available ingredients, making meal planning healthier and easier."
     },
     {
       "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Sleek Design Enhancing Your Kitchen Space",
+      "text": "Effortlessly track your food inventory in real-time using our Computer Vision technology, ensuring you always have an accurate view of what's in your fridge."
     },
     {
       "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Automated Inventory Management",
+      "text": " Elevate your kitchen aesthetics with our Smart Fridge's modern and space-saving design, seamlessly integrating into your home environment."
     },
     {
       "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Nutrition Insights and Recipe Recommendationsr",
+      "text": "Gain valuable nutritional information for stored items and receive personalized recipe suggestions based on available ingredients, making meal planning healthier and easier."
     },
     {
       "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Timely Expiration Alerts",
+      "text": "Stay informed with real-time notifications as your food items near their expiration dates, minimizing waste and maximizing freshness."
     }
   ],
   "Testimonials": [
