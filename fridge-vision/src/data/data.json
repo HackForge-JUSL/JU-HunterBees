@@ -132,23 +132,23 @@
   "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "name": "Anurag Dey",
+      "job": "Frontend Developer"
     },
     {
       "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "name": "Rounak Saha",
+      "job": "Backend Developer"
     },
     {
       "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "name": "Ankush Agarwala",
+      "job": "Frontend Developer"
     },
     {
       "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "name": "Swapnil Mal",
+      "job": "Backend Developer"
     }
   ],
   "Contact": {
