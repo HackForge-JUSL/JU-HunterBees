@@ -32,6 +32,7 @@ const App = () => {
                 <Header data={landingPageData.Header} />
                 <Routes>
                     <Route path="/" element={<Features data={landingPageData.Features} />} />
+                    <Route path="/features" element={<Features data={landingPageData.Features} />} />
                     <Route path="/uploadform" element={<UploadForm />} />
                 </Routes>
                 <About data={landingPageData.About} />
