@@ -150,13 +150,7 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
-      <div id="footer">
-        <div className="container text-center">
-          <p>
-            
-          </p>
-        </div>
-      </div>
+      
     </div>
   );
 };
