@@ -7,6 +7,7 @@ import UploadForm from './components/UploadForm'; // Import UploadForm
 import { About } from "./components/about";
 import { Services } from "./components/services";
 import { Gallery } from "./components/gallery";
+import Nutritional from './components/Nutritional';
 //import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
@@ -34,6 +35,7 @@ const App = () => {
                     <Route path="/" element={<Features data={landingPageData.Features} />} />
                     <Route path="/features" element={<Features data={landingPageData.Features} />} />
                     <Route path="/uploadform" element={<UploadForm />} />
+                    <Route path="/Nutritional" element={<Nutritional />} />
                 </Routes>
                 <About data={landingPageData.About} />
                 <Services data={landingPageData.Services} />

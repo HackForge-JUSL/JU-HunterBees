@@ -23,7 +23,8 @@ export const Features = () => {
     {
       icon: "fa fa-book",
       title: "Nutritional Information Access",
-      text: "Access detailed nutritional data for stored items, empowering healthier food choices and informed meal preparation."
+      text: "Access detailed nutritional data for stored items, empowering healthier food choices and informed meal preparation.",
+      onClick: () => navigate('/Nutritional') // Add this line
     }
   ];
 
