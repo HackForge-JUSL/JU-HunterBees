@@ -5,15 +5,15 @@ export const Features = () => {
   const navigate = useNavigate();
   const featuresData = [
     {
-      icon: "fa fa-truck",
-      title: "Real-Time Inventory Tracking",
-      text: "Stay updated on your food supplies with live monitoring, ensuring you never run out of essentials.",
+      icon: "fa fa-cutlery",
+      title: "Personalized Recipe Recommendations",
+      text: "Receive tailored recipe suggestions based on your preferences and available ingredients, simplifying meal planning.",
       onClick: () => navigate('/UploadForm')
     },
     {
-      icon: "fa fa-cutlery",
-      title: "Personalized Recipe Recommendations",
-      text: "Receive tailored recipe suggestions based on your preferences and available ingredients, simplifying meal planning."
+      icon: "fa fa-truck",
+      title: "Real-Time Inventory Tracking",
+      text: "Stay updated on your food supplies with live monitoring, ensuring you never run out of essentials."
     },
     {
       icon: "fa fa-bell",
