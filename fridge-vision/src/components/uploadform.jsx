@@ -73,7 +73,11 @@ function UploadForm() {
             .then(result => {
                 console.log(result); // Log the entire response object
                 if (result && result[0] && result[0].generated_text) {
-                    setRecipe(result[0].generated_text);
+                    let recipeText = result[0].generated_text;
+                    recipeText = recipeText.split('title:').join('\n\n**Title:**');
+                    recipeText = recipeText.split('ingredients:').join('\n\n**Ingredients:**');
+                    recipeText = recipeText.split('directions:').join('\n\n**Directions:**');
+                    setRecipe(recipeText);
                 } else {
                     console.error('No data in response');
                 }
